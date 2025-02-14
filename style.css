@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /*pode ser transparent também*/
+}
+
 body {
   font-family: sans-serif;
   font-size: 16px;
