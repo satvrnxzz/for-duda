@@ -52,7 +52,10 @@ body {
 
 /* CSS BUTTON */
 .button-82-pushable {
-  position: relative;
+  position: fixed; /* Mantém o botão fixo na tela */
+  left: 50%; /* Centraliza horizontalmente */
+  bottom: 80px; /* Ajusta a distância do fundo da tela */
+  transform: translateX(-50%); /* Centraliza o botão */
   border: none;
   background: transparent;
   padding: 0;
@@ -62,6 +65,7 @@ body {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  z-index: 1000; /* Garante que o botão fique acima de outros elementos */
 }
 
 .button-82-shadow {
@@ -96,7 +100,7 @@ body {
 .button-82-front {
   display: block;
   position: relative;
-  padding: 12px 27px;
+  padding: 12px 40px; /* Aumentei o padding horizontal para 40px */
   border-radius: 12px;
   font-size: 1.1rem;
   color: white;
@@ -109,7 +113,7 @@ body {
 @media (min-width: 768px) {
   .button-82-front {
     font-size: 1.25rem;
-    padding: 12px 42px;
+    padding: 12px 60px; /* Aumentei o padding horizontal para 60px em telas maiores */
   }
 }
 
